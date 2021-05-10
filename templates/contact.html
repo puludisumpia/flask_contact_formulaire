@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% from "bootstrap/form.html" import render_form %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="entete">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1>Me contacter</h1>
+                        <h4>Vous avez des questions? | J'ai des réponses.</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Maxime quas saepe totam dolores eum, animi explicabo 
+                            necessitatibus libero perspiciatis quia temporibus mollitia magni 
+                            rem commodi, quo id. Numquam totam maiores cumque impedit
+                            beatae voluptas possimus veritatis? Qui numquam labore quos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="formulaire">
+                            {% include "messages.html" %}
+                            <form action="" method="post">
+                                {{ render_form(form) }}
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="reseaux mt-4 mt-lg-0">
+                            <h4>Sur les réseaux sociaux</h4>
+                            <hr>
+                            <p>
+                                <a href=""><i class="fa fa-rss"></i></a>
+                                <a href=""><i class="fab fa-github"></i></a>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-whatsapp"></i></a>
+                            </p>
+
+                            <h4>Sur Discord</h4>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Nesciunt, dicta provident expedita veritatis saepe non ipsum 
+                                eius ipsa sit illo laboriosam sapiente libero ex 
+                                laborum asperiores harum voluptas vitae exercitationem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
